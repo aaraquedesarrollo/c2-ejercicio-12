@@ -4,7 +4,7 @@ const numeroGenerado = generarNumero();
 const botonAdivinar = document.querySelector(".adivinar");
 const numeroElemento = document.querySelector(".numero");
 botonAdivinar.addEventListener("click", () => {
-  if (botonAdivinar.valueAsNumber !== undefined) {
+  if (numeroElemento.valueAsNumber !== undefined) {
     comprobarNumero(numeroElemento.valueAsNumber);
   }
 });
