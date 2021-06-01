@@ -1,5 +1,18 @@
-const generarNumero = () => Math.floor(Math.random() * (10 - 1) + 1);
+const generarNumero = () => Math.floor(Math.random() * (11 - 1) + 1);
 const numeroGenerado = generarNumero();
 
 const botonAdivinar = document.querySelector(".adivinar");
-botonAdivinar.addEventListener("click", (e) => comprobarNumero());
+const numeroElemento = document.querySelector(".numero");
+botonAdivinar.addEventListener("click", (e) =>
+  comprobarNumero(numeroElemento.textContent)
+);
+
+const comprobarNumero = (numeroInput) => {
+  if (numeroInput > numeroGenerado) {
+    //
+  } else if (numeroInput < numeroGenerado) {
+    //
+  } else {
+    //
+  }
+};
